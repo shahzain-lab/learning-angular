@@ -1,0 +1,53 @@
+.todo--box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form--box{
+    border: 1px solid rgb(180, 180, 180);
+    margin: 10px 1rem;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.form--item{
+    width: 100%;
+}
+
+.form--btn{
+    width: 100%;
+}
+
+.game--group{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+// https://www.commonsensemedia.org/sites/default/files/styles/social_share_image/public/blog/parentsultimateguide-minecraft-blog.jpeg
+.game--item{
+    padding: 14px 8px;
+    max-width: 30%;
+    min-width: 28%;
+    margin: 1rem 5px;
+    text-align: center;
+}
+
+.game--item img{
+    width: 100%;
+}
+
+.game--item_header, .game--item_footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 3rem 0;
+    border-radius: 10%;
+    background-color: #cac7c7;
+}
+

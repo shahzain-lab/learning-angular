@@ -1,0 +1,7 @@
+  <mat-tab-group class="game--group">
+    <mat-tab *ngFor="let discoverGame of latestDiscover" label="{{discoverGame.game_title}}">
+      <img src="{{discoverGame.game_url}}" alt="{{discoverGame.game_title}}" />
+    </mat-tab>
+  </mat-tab-group>
+<app-stepper></app-stepper>
+<app-latest-games></app-latest-games>

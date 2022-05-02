@@ -1,0 +1,26 @@
+<div class="todo--box">
+<form class="form--box" [formGroup]="userForm" (submit)="onSubmit()">
+  <mat-form-field appearance="outline" class="form--item">
+    <mat-label>Your Name</mat-label>
+    <input matInput autocomplete="off" type="text" formControlName="Name">
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="form--item">
+    <mat-label>Favorite Game</mat-label>
+    <input matInput autocomplete="off" type="text" formControlName="GameName">
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="form--item">
+    <mat-label>Game URI</mat-label>
+    <input matInput autocomplete="off" type="url" formControlName="GameURI">
+  </mat-form-field>
+  <button mat-raised-button color="primary" class="form--btn" >Submit</button>
+</form>
+
+<div class="game--group">
+    <mat-card *ngFor="let game of userGamesList" class="game--item">
+      <h3 class="game--item_header"><span>Your Name:</span> {{ game.userName }}</h3>
+      <img src="{{ game.userGameURI }}" alt="{{ game.userGameName }}" />
+      <p class="game--item_footer"><span>Game Name:</span> {{ game.userGameName }}</p>
+    </mat-card>
+</div>
+</div>
+ 
