@@ -12,7 +12,11 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import {MatButtonModule} from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input'
+import { MatFormFieldModule } from '@angular/material/form-field'
 import { ProductsComponent } from './components/home/products/products.component';
+import { CreateProductComponent } from './components/create-product/create-product.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -22,15 +26,19 @@ import { ProductsComponent } from './components/home/products/products.component
     HeaderComponent,
     AboutComponent,
     ContactComponent,
-    ProductsComponent
+    ProductsComponent,
+    CreateProductComponent
   ],
   imports: [
     CommonModule,
     AdminRoutingModule,
     MatIconModule,
     MatToolbarModule,
+    ReactiveFormsModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatInputModule,
+    MatFormFieldModule
   ]
 })
 export class AdminModule { }

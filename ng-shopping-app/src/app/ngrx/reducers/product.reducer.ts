@@ -13,7 +13,9 @@ const initialState: Product[] = [
 const reducer = createReducer(
     initialState,
     on(createProduct, (state, action) => {
-        return [...state, action.payload]
+        console.log("payload", action.payload);
+        
+        return [...state, {id: Date.now().toString(), ...action.payload}]
     })
 )
 

@@ -4,6 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { CreateProductComponent } from './components/create-product/create-product.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,7 @@ const routes: Routes = [
       { path: 'home',component: HomeComponent },
       { path: 'about',component: AboutComponent },
       { path: 'cantact',component: ContactComponent },
+      { path: 'create',component: CreateProductComponent },
       {
         path: '',
         redirectTo: '/admin/home',

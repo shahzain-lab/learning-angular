@@ -2,9 +2,9 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 
 .products-item{
     width: 20%;
+    flex-wrap: wrap;
 }
